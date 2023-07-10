@@ -1,0 +1,16 @@
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+
+/* body{
+    margin: 0;
+} */
+.containerr{
+    max-width: 1180px;
+    margin: auto;
+}
+.containerrr{
+  max-width: 1120px;
+  margin:auto;
+}
