@@ -6,7 +6,7 @@ import aset_94 from "../../../assets/asset 94.svg"
 const Section_1 = () => {
     return (
         <>
-            <div className="bg-[rgb(240,242,238)] h-[633px] select-none">
+            <div className="bg-[rgb(240,242,238)] h-[633px] select-none z-10">
                 <div className="containerrr ">
                     <br />
                     <div className="flex mt-[160px] ">

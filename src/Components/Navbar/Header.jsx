@@ -7,10 +7,10 @@ import aset_91 from "../../assets/asset91.svg"
 import aset_92 from "../../assets/asset92.svg"
 import aset_93 from "../../assets/asset 93.svg"
 
-const Header = () => {
+const Header = (Props) => {
   return (
     <>
-      <div className="bg-[#f0f2ee] h-[80px]  border-[1px] border-gray-300  border-t-0 border-r-0 border-l-0 select-none">
+      <div className="bg-[#f0f2ee] h-[80px]  border-[1px] border-gray-300  border-t-0 border-r-0 border-l-0 select-none fixed top-0 w-full z-20">
         <div className="containerr">
           <header>
             <nav className="border-solid">
@@ -41,21 +41,21 @@ const Header = () => {
                     <div className="dropdown-menu absolute hidden pt-5 pb-5 px-5 w-48 bg-white shadow-xl text-sm leading-7 cursor-pointer">
 
                       <Link to="/Pages/Faqs" className="hover:text-pink-700">FAQs</Link><br/>
-                      <a href="#" className="hover:text-pink-700">Privacy & Policy</a> <br />
-                      <a href="#" className="hover:text-pink-700">Terms & conditions</a> <br />
-                      <a href="#" className="hover:text-pink-700">Login</a> <br />
-                      <a href="#" className="hover:text-pink-700">Register</a> <br />
-                      <a href="#" className="hover:text-pink-700">Forget Password</a> <br />
-                      <a href="#" className="hover:text-pink-700">My Cart</a> <br />
-                      <a href="#" className="hover:text-pink-700">My Wishlist</a> <br />
-                      <a href="#" className="hover:text-pink-700">Checkout</a> <br />
-                      <a href="#" className="hover:text-pink-700">Error 404</a>
+                      <Link to="/Pages/Privacy" className="hover:text-pink-700">Privacy & Policy</Link> <br />
+                      <Link to="/Pages/Terms" className="hover:text-pink-700">Terms & conditions</Link> <br />
+                      <Link to="/Pages/Login" className="hover:text-pink-700">Login</Link> <br />
+                      <Link to="/Pages/Register" className="hover:text-pink-700">Register</Link> <br />
+                      <Link to="/Pages/ForgotPassword" className="hover:text-pink-700">Forget Password</Link> <br />
+                      <Link to="/Pages/Cart" className="hover:text-pink-700">My Cart</Link> <br />
+                      <Link to="/Pages/Wishlist" className="hover:text-pink-700">My Wishlist</Link> <br />
+                      <Link to="/Pages/Checkout" className="hover:text-pink-700">Checkout</Link> <br />
+                      <Link to="/Pages/Error" className="hover:text-pink-700">Error 404</Link>
                     </div>
                   </div>
 
                   <div>
-                    <a className="text-[525258] text-[15px] hover:text-red-600 "
-                      style={{ fontFamily: "sans-serif" }} href="#">Contact us</a>
+                    <Link className="text-[525258] text-[15px] hover:text-red-600 "
+                      style={{ fontFamily: "sans-serif" }} to="/Contact">Contact us</Link>
                   </div>
                 </div>
                 <div className="flex gap-6">
@@ -67,14 +67,14 @@ const Header = () => {
                   </a>
                   <div>
                     <div
-                      className="absolute right-12 -top-0.5 z-10 -translate-y-0 translate-x-2.5 rounded-full bg-pink-600 p-1 text-xs text-white">0</div>
+                      className="absolute right-[41px] -top-0.5 z-10 -translate-y-0 translate-x-2.5 rounded-full bg-pink-600 p-1 text-xs text-white outline px-1.5">0</div>
                     <a href="#">
                       <img src={aset_92} alt="" />
                     </a>
                   </div>
                   <div>
                     <div
-                      className="absolute right-1 -top-0.5 z-10 -translate-y-0 translate-x-2.5 rounded-full bg-pink-600 p-1 text-xs text-white">0</div>
+                      className="absolute -right-1 -top-1 z-10 -translate-y-0 translate-x-2.5 rounded-full bg-pink-600 p-1 text-xs text-white outline px-1.5">{Props.CartItm}</div>
                     <a href="#">
                       <img src={aset_93} alt="" />
                     </a>
