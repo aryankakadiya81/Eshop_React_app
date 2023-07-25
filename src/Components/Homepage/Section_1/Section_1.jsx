@@ -48,7 +48,7 @@ const Section_1 = () => {
                                 </button>
                             </div>
                         </div>
-                        <div className="loader top-[420px]"></div>
+                        <div className="loader top-[350px]"></div>
                         <img
                             alt='Not Show'
                             src={aset_3}

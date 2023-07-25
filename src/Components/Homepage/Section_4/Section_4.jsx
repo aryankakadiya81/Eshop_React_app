@@ -11,7 +11,7 @@ import aset_105 from "../../../assets/asset 105.svg"
 const Section_4 = () => {
   return (
     <>
-    <div className='containerrr'>
+    <div className='containerrr mb-10'>
         <div className='h-[450px] w-full  mt-[300px] iphone' style={{backgroundImage: `url("${asset_88}")`, backgroundSize:"cover"}}><br/>
             <div className='mt-24 ms-[80px] max-w-[390px] absolute'>
                 <p className='text-[#525258] text-[15px] leading-[26px]'>Apple iPhone 12 Pro</p>

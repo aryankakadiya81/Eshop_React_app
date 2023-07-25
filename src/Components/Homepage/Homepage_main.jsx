@@ -1,6 +1,5 @@
 import React from 'react'
 import Section_1 from './Section_1/Section_1'
-import Section_1p5 from './Section_1.5/Section_1.5'
 import Section1p5 from './Section_1.5/Section_1.5'
 import Section_2 from './Section_2/Section_2'
 import Section_3 from './Section_3/Section_3'

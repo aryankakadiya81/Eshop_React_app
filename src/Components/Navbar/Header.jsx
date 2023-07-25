@@ -67,14 +67,14 @@ const Header = (Props) => {
                   </a>
                   <div>
                     <div
-                      className="absolute right-[41px] -top-0.5 z-10 -translate-y-0 translate-x-2.5 rounded-full bg-pink-600 p-1 text-xs text-white outline px-1.5">0</div>
+                      className="absolute right-[38px] -top-1 z-10 -translate-y-0 translate-x-2.5 rounded-full bg-pink-600 text-xs text-white outline h-6 w-6 text-center align-middle pt-1 font-semibold">0</div>
                     <a href="#">
                       <img src={aset_92} alt="" />
                     </a>
                   </div>
                   <div>
                     <div
-                      className="absolute -right-1 -top-1 z-10 -translate-y-0 translate-x-2.5 rounded-full bg-pink-600 p-1 text-xs text-white outline px-1.5">{Props.CartItm}</div>
+                      className="absolute -right-1 -top-1 z-10 -translate-y-0 translate-x-2.5 rounded-full bg-pink-600 text-xs text-white outline h-6 w-6 text-center align-middle pt-1 font-semibold">{Props.CartItm}</div>
                     <a href="#">
                       <img src={aset_93} alt="" />
                     </a>

@@ -6,7 +6,7 @@ const Section_5 = () => {
         <>
             <div>
                 <div className='h-[300px] w-[auto] bg-right' style={{ backgroundImage: `url("${aset_89}")`, backgroundSize: "cover" }}>
-                    <div className="mt-14">
+                    <div className="">
                         <div className="containerrr"><br />
                             <div className="h-[200px] w-[auto]  bg-white">
                                 <div className="flex justify-around mt-8">

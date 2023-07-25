@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { BrowserRouter, Routes, Route, MemoryRouter, HashRouter } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./Components/Navbar/Header";
 import Footer from './Components/Footer/Footer';
 import Homepage from './Components/Homepage/Homepage_main';
@@ -16,6 +16,8 @@ import My_Cart_Main from "./Components/Pages/My_Cart/My_Cart_Main";
 import My_Wishlist_Main from "./Components/Pages/My_Wishlist/My_Wishlist_Main";
 import Checkout_Main from "./Components/Pages/Checkout/Checkout_Main";
 import Contact_Main from "./Components/Contact/Contact_Main";
+import Section_2p1 from "./Components/Homepage/Section_2/Section_2(1)";
+import Section_2p2 from "./Components/Homepage/Section_2/Section_2(2)";
 
 function App() {
   let [Itm, setItm] = useState(0);
@@ -30,8 +32,10 @@ function App() {
       <BrowserRouter>
         <div>
           <Navbar CartItm={Itm}></Navbar>
+          
+
           <Routes>
-            <Route path='/' element={<Homepage CartFun={() => { Cart() }} />} />
+            <Route path='/' element={<Homepage CartFun={() => { Cart() }}></Homepage>}></Route>
             <Route path='/About' element={<About_Main />} />
             <Route path='/Shop' element={<Shop_main />} />
 
@@ -46,18 +50,27 @@ function App() {
             <Route path="/Pages/Checkout" element={<Checkout_Main />} />
             <Route path="/Pages/Error" element={<Error_main />} />
 
-            <Route path="/Contact" element={<Contact_Main/>} />
+            <Route path="/Contact" element={<Contact_Main />} />
           </Routes>
+
+
 
           <Footer></Footer>
 
         </div>
       </BrowserRouter>
-      <HashRouter>
-      
-      </HashRouter>
+
     </>
   )
 }
 
 export default App
+
+
+// <Homepage CartFun={() => { Cart() }}>
+//             <Routes>
+//               <Route path="/Best" element={<Section_2p1></Section_2p1>}></Route>
+//               <Route path="/Latest" element={<Section_2p2></Section_2p2>}></Route>
+
+//             </Routes>
+//           </Homepage>

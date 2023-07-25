@@ -1,11 +1,13 @@
 import React from 'react';
 import "./Section_2.css";
 import Section from "./Section_2.json"
+import { BrowserRouter, Link, Route, Routes } from 'react-router-dom';
+
 
 const Section_2 = (Props) => {
   return (
     <>
-      <div className='container-2xl mx-auto mt-36'>
+      <div className='container-2xl mx-auto mt-20'>
         <div className='w-10/12 mx-auto'>
           <div className='flex justify-center'>
             <div className='container'>
@@ -13,9 +15,9 @@ const Section_2 = (Props) => {
               <div className='flex justify-between'>
                 <h1 className='font-bold border-0 border-custom-pink border-l-4 text-4xl pl-5'>Popular Product</h1>
                 <div>
-                  <a href='' className='ml-6'>Top Rated</a>
-                  <a href='' className='ml-6'>Best Selling</a>
-                  <a href='' className='ml-6'>Latest Product</a>
+                  <Link to='/' className='ml-6'>Top Rated</Link>
+                  <Link to='/Best' className='ml-6'>Best Selling</Link>
+                  <Link to='/Latest' className='ml-6'>Latest Product</Link>
                 </div>
               </div>
 
