@@ -1,10 +1,11 @@
-import React from 'react'
+import React from 'react';
+import './Checkout.css';
+import Login_Main from '../Login/Login_Main'
+
 
 const Checkout_Main = () => {
   return (
-    <div className='text-3xl font-bold text-center m-56'>
-        Checkout_Main
-    </div>
+    <Login_Main></Login_Main>
   )
 }
 

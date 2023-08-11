@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Errors from '../../../assets/Error.svg';
+import Errors from '../../../../assets/Error.svg';
 // import aset_89 from '../../../assets/aset 89.jpeg'
 import Section_5 from '../../Homepage/Section_5/Section_5';
 

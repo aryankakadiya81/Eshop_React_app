@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import { Route, Routes } from "react-router-dom";
 import Section_1 from './Section_1/Section_1'
 import Section1p5 from './Section_1.5/Section_1.5'
 import Section_2 from './Section_2/Section_2'
@@ -12,7 +13,9 @@ const Homepage_main = (Props) => {
             <div className='select-none'>
                 <Section_1></Section_1>
                 <Section1p5></Section1p5>
-                <Section_2 CartFun={Props.CartFun}></Section_2>
+
+                <Section_2></Section_2>
+
                 <Section_3></Section_3>
                 <Section_4></Section_4>
                 <Section_5></Section_5>
@@ -21,5 +24,4 @@ const Homepage_main = (Props) => {
     )
 }
 
-export default Homepage_main
-
+export default Homepage_main;

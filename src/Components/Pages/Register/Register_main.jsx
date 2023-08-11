@@ -1,8 +1,8 @@
 import React from 'react';
-import a4 from '../../../assets/a4.svg';
-import a3 from '../../../assets/a3.svg';
-import a2 from '../../../assets/a2.svg';
-import a1 from '../../../assets/a1.svg';
+import a4 from '../../../../assets/a4.svg';
+import a3 from '../../../../assets/a3.svg';
+import a2 from '../../../../assets/a2.svg';
+import a1 from '../../../../assets/a1.svg';
 
 const Register_main = () => {
   return (

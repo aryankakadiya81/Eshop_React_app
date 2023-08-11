@@ -1,0 +1,48 @@
+[
+    {
+        "image": "../../../../../assets/asset11.jpeg",
+        "Name": "Microsoft's Surface Hub 2S",
+        "Sal": "sale",
+        "Pr": "-3%",
+        "Delprice": "$799.00",
+        "Price": "$775.03"
+    },
+    {
+        "image": "../../../assets2/asset 12.jpeg",
+        "Name": "Dualshock Wirless Control",
+        "Price": "$79.00"
+    },
+    {
+        "image": "../../../assets2/asset 13.jpeg",
+        "Name": "Apple iphone 13 Pro Max",
+        "Price": "$1660.00"
+    },
+    {
+        "image": "../../../assets2/asset 14.jpeg",
+        "Name": "Apple ipad mini",
+        "Price": "$887.00"
+    },
+    {
+        "image": "../../../assets2/asset 15.jpeg",
+        "Name": "Apple iphone 14 Pro Max",
+        "Sal": "sale",
+        "Pr": "-10%",
+        "Delprice": "$1860.65",
+        "Price": "$1674.59"
+    },
+    {
+        "image": "../../../assets2/asset 16.jpeg",
+        "Name": "Sennheiser Sport True Wireless Earbuds",
+        "Price": "$169.00"
+    },
+    {
+        "image": "../../../assets2/asset 17.jpeg",
+        "Name": "Hious Case For Lenovo Yoga Tab 13",
+        "Price": "$779.00"
+    },
+    {
+        "image": "../../../assets2/asset 18.jpeg",
+        "Name": "Interactive Whiteboard Microsoft Surface Hub",
+        "Price": "$688.00"
+    }
+]

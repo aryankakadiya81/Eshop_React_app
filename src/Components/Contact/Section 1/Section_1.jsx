@@ -1,8 +1,8 @@
 import React from 'react';
 import './Section_1.css';
-import aset_107 from '../../../assets/msg.png';
-import aset_108 from '../../../assets/admin.png'
-import aset_109 from '../../../assets/location.png'
+import aset_107 from '../../../../assets/msg.png';
+import aset_108 from '../../../../assets/admin.png'
+import aset_109 from '../../../../assets/location.png'
 
 const Section_1 = () => {
     return (

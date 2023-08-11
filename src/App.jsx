@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { createContext, useCallback, useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./Components/Navbar/Header";
 import Footer from './Components/Footer/Footer';
@@ -16,50 +16,67 @@ import My_Cart_Main from "./Components/Pages/My_Cart/My_Cart_Main";
 import My_Wishlist_Main from "./Components/Pages/My_Wishlist/My_Wishlist_Main";
 import Checkout_Main from "./Components/Pages/Checkout/Checkout_Main";
 import Contact_Main from "./Components/Contact/Contact_Main";
-import Section_2p1 from "./Components/Homepage/Section_2/Section_2(1)";
-import Section_2p2 from "./Components/Homepage/Section_2/Section_2(2)";
+import Best_Selling from './Components/Homepage/Section_2/Inner_Sec2/Best_Selling/Best_Selling';
+import Latest_Product from "./Components/Homepage/Section_2/Inner_Sec2/Latest_Product/Latest_Product";
+import Top_Rated from "./Components/Homepage/Section_2/Inner_Sec2/Top_Rated/Top_Rated";
+
+
+export let Item = createContext();
 
 function App() {
-  let [Itm, setItm] = useState(0);
-  function Cart() {
-    setItm(Itm + 1)
-  }
+  let [Citem, setCitem] = useState(0);
+  let [Cwish, setCwish] = useState(0)
+
+  let Cart = useCallback(() => {
+    setCitem(Citem + 1);
+  }, [Citem]);
+
+
+  let Wish = useCallback(() => {
+    setCwish(Cwish + 1);
+  }, [Cwish]);
 
 
   return (
     <>
 
       <BrowserRouter>
-        <div>
-          <Navbar CartItm={Itm}></Navbar>
-          
-
-          <Routes>
-            <Route path='/' element={<Homepage CartFun={() => { Cart() }}></Homepage>}></Route>
-            <Route path='/About' element={<About_Main />} />
-            <Route path='/Shop' element={<Shop_main />} />
-
-            <Route path='/Pages/Faqs' element={<Faqs_main />} />
-            <Route path='/Pages/Privacy' element={<Privacy_main />} />
-            <Route path="/Pages/Terms" element={<Terms_and_Condition_main />} />
-            <Route path="/Pages/Login" element={<Login_Main />} />
-            <Route path="/Pages/Register" element={<Register_main />} />
-            <Route path="/Pages/ForgotPassword" element={<Forgot_Password_Main />} />
-            <Route path="/Pages/Cart" element={<My_Cart_Main />} />
-            <Route path="/Pages/Wishlist" element={<My_Wishlist_Main />} />
-            <Route path="/Pages/Checkout" element={<Checkout_Main />} />
-            <Route path="/Pages/Error" element={<Error_main />} />
-
-            <Route path="/Contact" element={<Contact_Main />} />
-          </Routes>
+        <Item.Provider value={{ Citem, Cart, Cwish, Wish }} >
+          <div>
+            <Navbar></Navbar>
 
 
+            <Routes>
+              <Route path='' element={<Homepage></Homepage>}>
 
-          <Footer></Footer>
 
-        </div>
+                <Route path='' element={<Top_Rated></Top_Rated>}></Route>
+
+                <Route path='Best_Selling' element={<Best_Selling />}></Route>
+                <Route path='Latest_Product' element={<Latest_Product></Latest_Product>}></Route>
+              </Route>
+              <Route path='/About' element={<About_Main />} />
+              <Route path='/Shop' element={<Shop_main />} />
+
+              <Route path='/Pages/Faqs' element={<Faqs_main />} />
+              <Route path='/Pages/Privacy' element={<Privacy_main />} />
+              <Route path="/Pages/Terms" element={<Terms_and_Condition_main />} />
+              <Route path="/Pages/Login" element={<Login_Main />} />
+              <Route path="/Pages/Register" element={<Register_main />} />
+              <Route path="/Pages/ForgotPassword" element={<Forgot_Password_Main />} />
+              <Route path="/Pages/Cart" element={<My_Cart_Main />} />
+              <Route path="/Pages/Wishlist" element={<My_Wishlist_Main />} />
+              <Route path="/Pages/Checkout" element={<Checkout_Main />} />
+              <Route path="/Pages/Error" element={<Error_main />} />
+
+              <Route path="/Contact" element={<Contact_Main />} />
+            </Routes>
+
+
+            <Footer></Footer>
+          </div>
+        </Item.Provider>
       </BrowserRouter>
-
     </>
   )
 }

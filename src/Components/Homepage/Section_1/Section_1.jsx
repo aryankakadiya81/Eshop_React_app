@@ -1,7 +1,8 @@
 import React from 'react'
 import './Section_1.css';
-import aset_3 from "../../../assets/asset 3.png"
-import aset_94 from "../../../assets/asset 94.svg"
+import aset_3 from "../../../../assets/asset 3.png"
+import aset_94 from "../../../../assets/asset 94.svg"
+import { Link } from 'react-router-dom';
 
 const Section_1 = () => {
     return (
@@ -39,6 +40,7 @@ const Section_1 = () => {
                                 >
                                     Fill Your Heart
                                 </p>
+                                <Link to="/Shop">
                                 <button
                                     className="text-[15px] mt-8 text-[#525258] px-6 font-medium border-[1.5px] flex py-2 border-solid border-black hover:bg-black hover:text-white"
                                     style={{ fontFamily: "sans-serif", padding: "7px , 33px" }}
@@ -46,6 +48,7 @@ const Section_1 = () => {
                                     Shop Now
                                     <img src={aset_94} alt='Not Show' className="ml-2 mt-[2.5px] " />
                                 </button>
+                                </Link>
                             </div>
                         </div>
                         <div className="loader top-[350px]"></div>

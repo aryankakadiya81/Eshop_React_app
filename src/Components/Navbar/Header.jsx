@@ -1,13 +1,18 @@
-import React from "react";
+import React, { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import './Header.css';
-import aset_0 from '../../assets/asset0.svg';
-import aset_90 from "../../assets/asset90.svg"
-import aset_91 from "../../assets/asset91.svg"
-import aset_92 from "../../assets/asset92.svg"
-import aset_93 from "../../assets/asset 93.svg"
+import aset_0 from  '../../../assets/asset0.svg';
+import aset_90 from "../../../assets/asset90.svg"
+import aset_91 from "../../../assets/asset91.svg"
+import aset_92 from "../../../assets/asset92.svg"
+import aset_93 from "../../../assets/asset 93.svg"
+import { Item } from "../../App";
 
-const Header = (Props) => {
+const Header = () => {
+
+  let {Citem,Cwish} = useContext(Item);
+
+
   return (
     <>
       <div className="bg-[#f0f2ee] h-[80px]  border-[1px] border-gray-300  border-t-0 border-r-0 border-l-0 select-none fixed top-0 w-full z-20">
@@ -16,9 +21,9 @@ const Header = (Props) => {
             <nav className="border-solid">
               <br />
               <ul className="header-menu flex justify-between relative  items-center">
-                <a href="#">
+                <Link to="/">
                   <img src={aset_0} className='mt-[-3.5px]' />
-                </a>
+                </Link>
                 <div className="flex absolute left-[260px] gap-8 ">
                   <div>
                     <Link to="/" style={{ fontFamily: "sans-serif" }} className="text-[525258] text-[15px] hover:text-red-600 ">Home</Link>
@@ -62,22 +67,22 @@ const Header = (Props) => {
                   <a href="#">
                     <img src={aset_90} alt="" />
                   </a>
-                  <a href="#">
+                  <Link to="/Pages/Login">
                     <img src={aset_91} alt="" />
-                  </a>
+                  </Link>
                   <div>
                     <div
-                      className="absolute right-[38px] -top-1 z-10 -translate-y-0 translate-x-2.5 rounded-full bg-pink-600 text-xs text-white outline h-6 w-6 text-center align-middle pt-1 font-semibold">0</div>
-                    <a href="#">
+                      className="absolute right-[38px] -top-1 z-10 -translate-y-0 translate-x-2.5 rounded-full bg-pink-600 text-xs text-white outline h-6 w-6 text-center align-middle pt-1 font-semibold">{Cwish}</div>
+                    <Link to="/Pages/Wishlist">
                       <img src={aset_92} alt="" />
-                    </a>
+                    </Link>
                   </div>
                   <div>
                     <div
-                      className="absolute -right-1 -top-1 z-10 -translate-y-0 translate-x-2.5 rounded-full bg-pink-600 text-xs text-white outline h-6 w-6 text-center align-middle pt-1 font-semibold">{Props.CartItm}</div>
-                    <a href="#">
+                      className="absolute -right-1 -top-1 z-10 -translate-y-0 translate-x-2.5 rounded-full bg-pink-600 text-xs text-white outline h-6 w-6 text-center align-middle pt-1 font-semibold">{Citem}</div>
+                    <Link to="/Pages/Cart">
                       <img src={aset_93} alt="" />
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </ul>

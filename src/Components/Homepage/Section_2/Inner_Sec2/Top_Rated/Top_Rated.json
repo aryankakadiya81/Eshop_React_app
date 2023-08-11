@@ -1,0 +1,80 @@
+[
+    {
+        "image": "../../../assets/asset 71.jpeg",
+        "Name": "Apple Watch Series 8",
+        "Price": "$88.00"
+    },
+    {
+        "image": "../../../assets/asset11.jpeg",
+        "Name": "TECLAST Tablet Protective Cover Case",
+        "Sal": "sale",
+        "Pr": "-12%",
+        "Delprice": "$899.00",
+        "Price": "$791.12"
+    },
+    {
+        "image": "../../../assets/asset 17.jpeg",
+        "Name": "View Professional Moniter",
+        "Sal": "sale",
+        "Pr": "-6%",
+        "Delprice": "$299.00",
+        "Price": "$281.06"
+    },
+    {
+        "image": "../../../assets/asset 30.jpeg",
+        "Name": "Buy Guild Planer - 900w",
+        "Price": "$239.00"
+    },
+    {
+        "image": "../../../assets/asset 78.jpeg",
+        "Name": "E68 Wireless Headphone Bluetooth",
+        "Price": "$114.00"
+    },
+    {
+        "image": "../../../assets/asset 43.jpeg",
+        "Name": "Xiaomi Poco M4 pro 5G",
+        "Price": "$67.00"
+    },
+    {
+        "image": "../../../assets/asset 54.jpeg",
+        "Name": "Tempo Sphera Spinning Reel",
+        "Sal": "sale",
+        "Pr": "-15%",
+        "Delprice": "$799.00",
+        "Price": "$679.15"
+    },
+    
+    
+    {
+        "image": "../../../assets/asset 59.jpeg",
+        "Name": "Braun Series Electric Shaver Clean",
+        "Sal": "sale",
+        "Pr": "-12%",
+        "Delprice": "$299.00",
+        "Price": "$263.12"
+    },
+    {
+        "image": "../../../assets/asset 47.jpeg",
+        "Name": "Stariver Electric Kettle",
+        "Price": "$59.00"
+    },
+    {
+        "image": "../../../assets/asset 71.jpeg",
+        "Name": "Apple Watch Series 8",
+        "Price": "$188.00"
+    },
+    {
+        "image": "../../../assets/asset 35.jpeg",
+        "Name": "VR Virtual Reality Headset",
+        "Sal": "sale",
+        "Pr": "-10%",
+        "Delprice": "$137.00",
+        "Price": "$123.30"
+    },
+    {
+        "image": "../../../assets/asset 66.jpeg",
+        "Name": "STANLEY STPP7502 750W 2mm Planer",
+        "Price": "$356.00"
+    }
+
+]

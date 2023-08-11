@@ -1,5 +1,5 @@
 import React from 'react';
-import a4 from '../../../assets/a4.svg'
+import a4 from '../../../../assets/a4.svg'
 
 const Forgot_Password_Main = () => {
   return (

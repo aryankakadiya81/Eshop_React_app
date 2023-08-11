@@ -1,5 +1,5 @@
 import React from 'react'
-import aset_89 from "../../../assets/asset 89.jpeg"
+import aset_89 from "../../../../assets/asset 89.jpeg"
 
 const Section_5 = () => {
     return (
@@ -15,11 +15,11 @@ const Section_5 = () => {
                                     </div>
                                     <div className="mt-[70px]">
                                         <div className="w-[500px] h-[60px] border border-black flex items-center justify-around">
-                                            <div>
-                                                <input type="text" placeholder="Enter Your Email" className="input1 w-[290px] outline-none" />
+                                            <div className='outline-none'>
+                                                <input type="text" placeholder="Enter Your Email" className="input1 w-[290px] border-none outline-none" />
                                             </div>
                                             <div>
-                                                <a href="#" className="inline-flex items-center justify-center pt-2 ps-10 pe-10 py-2 text-base font-medium leading-6 text-white whitespace-no-wrap bg-black border-black hover:bg-red-500 duration-500">Subscribe</a>
+                                                <a href="#" className="inline-flex items-center justify-center pt-2 ps-10 pe-10 py-2 text-base font-medium leading-6 text-white whitespace-no-wrap bg-black border-black hover:bg-red-500 duration-500 outline-none">Subscribe</a>
                                             </div>
                                         </div>
                                     </div>

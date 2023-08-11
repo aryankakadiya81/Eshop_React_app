@@ -1,6 +1,6 @@
 import React from 'react';
-import aset_0 from "../../assets/asset0.svg";
-import aset_87 from "../../assets/asset 87.png";
+import aset_0 from "../../../assets/asset0.svg";
+import aset_87 from "../../../assets/asset 87.png";
 
 
 const Footer = () => {

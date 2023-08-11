@@ -1,7 +1,7 @@
 import React from 'react';
-import aset_110 from '../../../assets/unity.png'
-import aset_111 from '../../../assets/taj.png'
-import aset_112 from '../../../assets/triangle.png'
+import aset_110 from '../../../../assets/unity.png'
+import aset_111 from '../../../../assets/taj.png'
+import aset_112 from '../../../../assets/triangle.png'
 
 const Section_3 = () => {
     return (

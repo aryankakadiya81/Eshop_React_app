@@ -1,0 +1,40 @@
+[
+    {
+        "image": "../../../../assets3/asset 11.jpeg",
+        "Name": "Bluetooth speaker with light",
+        "Price": "$89.00"
+    },
+    {
+        "image": "../../../../assets3/asset 12.jpeg",
+        "Name": "HP Reverb G2 VR Headset",
+        "Price": "$999.00"
+    },
+    {
+        "image": "../../../../assets3/asset 13.jpeg",
+        "Name": "Cougar Gaming Case (Conquer)",
+        "Sal": "sale",
+        "Pr": "-15%",
+        "Delprice": "$599.00",
+        "Price": "$509.15"
+    },
+    {
+        "image": "../../../../assets3/asset 14.jpeg",
+        "Name": "Wireless Rechargeable Bettery Powered Camera",
+        "Price": "$56.00"
+    },
+    {
+        "image": "../../../../assets3/asset 15.jpeg",
+        "Name": "New Beats Studio Buds",
+        "Price": "$100.00"
+    },
+    {
+        "image": "../../../../assets3/asset 16.jpeg",
+        "Name": "Polaroid Go and Camera Case Bundle",
+        "Price": "$35.00"
+    },
+    {
+        "image": "../../../../assets3/asset 17.jpeg",
+        "Name": "Alarm Clock for Kids",
+        "Price": "$58.00"
+    }
+]

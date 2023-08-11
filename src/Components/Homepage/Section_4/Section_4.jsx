@@ -1,11 +1,11 @@
 import React from 'react'
 import "./Section_4.css"
-import asset_88 from "../../../assets/asset 88.jpeg"
-import aset_94 from "../../../assets/asset 94.svg"
-import aset_102 from "../../../assets/asset 102.svg"
-import aset_103 from "../../../assets/asset 103.svg"
-import aset_104 from "../../../assets/asset 104.svg"
-import aset_105 from "../../../assets/asset 105.svg"
+import asset_88 from "../../../../assets/asset 88.jpeg"
+import aset_94 from  "../../../../assets/asset 94.svg"
+import aset_102 from "../../../../assets/asset 102.svg"
+import aset_103 from "../../../../assets/asset 103.svg"
+import aset_104 from "../../../../assets/asset 104.svg"
+import aset_105 from "../../../../assets/asset 105.svg"
 
 
 const Section_4 = () => {
